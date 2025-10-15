@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttributesInForms</title>
+</head>
+<body>
+    <form action="https://www.facebook.com/signin" target="_blank">
+        <label for="" style="color: black;background-color: greenyellow;border: 1px solid black;">Gender</label>
+        <input type="radio" name="Gender"><label for="">Male</label>
+        <input type="radio" name="Gender"><label for="">Female</label>
+        <input type="radio" name="Gender"><label for="">TransGender</label>
+        <input type="radio" name="Gender"><label for="">others</label>
+        <br><br>
+        <label for="" style="color: black;background-color: greenyellow;border: 1px solid black;">Skills</label>
+        <input type="checkbox"><label for="">HTML</label>
+        <input type="checkbox"><label for="">CSS</label>
+        <input type="checkbox"><label for="">JavaScript</label>
+        <input type="checkbox"><label for="">ReactJavaScript</label>
+        <br><br>
+        <!-- <label for="">Username</label> -->
+        <input type="text" name="Username" id="Username_inputbox" placeholder="Username" required autofocus><sup style="color: red;">*</sup>
+        <br><br>
+        <!--<label for="">Password</label> -->
+        <input type="password" name="Password" id="password_inputbox" placeholder="Password" required autofocus><sup style="color: red;">*</sup>
+        <br><br>
+        <!-- <label for="">MobileNumber</label> -->
+        <input type="tel" name="MobileNumber" id="mobileNumber_inputbox" placeholder="MobileNumber" required autofocus><sup style="color: red;">*</sup>
+        <br><br>
+        <input type="number" name="AadhaarNumber" id="aadhaar_number_inputbox" placeholder="AadhaarNumber" value="198648736936" readonly>
+        <br><br>
+        <input type="text" name="PANcardNUmber" id="pancard_number_inputbox" placeholder="PANcardNUmber" value="2762gh27ssmb" readonly>
+        <br><br>
+        <input type="text" name="OTPInputBoxes" id="otp_inputbox" style="width: 8px;" minlength="1" maxlength="1">
+        <input type="text" name="OTPInputBoxes" id="otp_inputbox" style="width: 8px;" minlength="1" maxlength="1">
+        <input type="text" name="OTPInputBoxes" id="otp_inputbox" style="width: 8px;" minlength="1" maxlength="1">
+        <input type="text" name="OTPInputBoxes" id="otp_inputbox" style="width: 8px;" minlength="1" maxlength="1">
+        <input type="text" name="OTPInputBoxes" id="otp_inputbox" style="width: 8px;" minlength="1" maxlength="1">
+        <input type="text" name="OTPInputBoxes" id="otp_inputbox" style="width: 8px;" minlength="1" maxlength="1">
+        <input type="button" value="ValidateOTP" disabled>
+        <br><br>
+        <input type="number" name="IASEligibilityAge" id="ias_eligibility_age_inputbox" placeholder="IASEligibilityAge" min="21" max="32" style="width: 25%;">
+        <br><br>
+        <input type="date" name="Date" id="date_picker" min="2000-01-01" max="2025-08-31">
+        <br><br>
+        <input type="time" name="Time" id="time_picker" min="06:00" max="18:00">
+        <br><br>
+        <input type="submit" value="login">
+        <a href="https://www.facebook.com/signup"><input type="button" value="Signup"></a>
+        <input type="reset" value="cancel">
+        <br><br>
+        <!-- dropdown List-->
+         <select name="CityDropDownList" id="city_dropdown_list">
+         <option>--SelectCity--</option>
+         <optgroup label="AndhraPradesh">
+            <option>Vishakapatnam</option>
+            <option>Vijaywada</option>
+            <option>Guntur</option>
+         </optgroup>
+         <optgroup label="Telangana">
+            <option>Hyderabad</option>
+            <option>Warngal</option>
+            <option>HiTechCity</option>
+         </optgroup>
+         <optgroup label="Tamilnadu">
+            <option>Tiruvanamalai</option>
+            <option>Chennai</option>
+            <option>Coimbatore</option>
+         </optgroup>
+         </select>
+         <!-- datalist -->
+        <input type="text" name="Course" id="course_inputbox" placeholder="Course" list="course_datalist">
+        <datalist id="course_datalist">
+        <option>WebDevelopment</option>
+        <option>CoreJava</option>
+        <option>CorePython</option>
+        <option>ManualTesting</option>
+        <option>AutomationTesting</option>
+        </datalist>
+            <label for="state_inputbox">State</label>
+            <input type="text" name="State" id="state_inputbox" list="state_datalist">
+            <datalist id="state_datalist">
+            <option>AndhraPradesh</option>
+            <option>Telangana</option>
+            <option>Tamilnadu</option>
+            <option>Keralam</option>
+            <option>Karnataka</option>
+        </datalist>
+    </form>
+</body>
+</html>

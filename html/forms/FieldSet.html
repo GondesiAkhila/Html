@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FieldSet</title>
+</head>
+<body>
+    <fieldset style="width: fit-content;border: 2px solid royalblue;">
+        <legend style="color: royalblue;">AmazonDelivery</legend>
+        <table>
+            <form action="">
+               <tr>
+                <td><label for="">FirstName</label></td>
+                <td><input type="text" name="FirstName" id="first_name_inputbox"></td>
+               </tr>
+               <tr>
+                <td><label for="">LastName</label></td>
+                <td><input type="text" name="LastName" id="last_name_inputbox"></td>
+               </tr>
+               <tr>
+                  <td><label for="">MobileNumber</label></td>
+                  <td><input type="tel" name="MobileNumber" id="mobile_number_inputbox"></td>
+               </tr>
+               <tr>
+                <td><label for="">Address</label></td>
+                <td><textarea name="Address" id="address_textareabox" rows="5" cols="20" style="resize: none;"></textarea></td>
+               </tr>
+               <tr>
+                <th>
+                    <input type="submit" value="Deliver" style="color: white; background-color: blue;border:none;border-radius: 30px; outline: none;">
+                </th>
+                <th>
+                    <input type="reset" value="cancelDelivery" style="color: white;background-color: blue;border: none;border-radius: 30px;outline: none;">
+                </th>     
+               </tr>
+            </form>
+        </table>
+    </fieldset>
+</body>
+</html>
